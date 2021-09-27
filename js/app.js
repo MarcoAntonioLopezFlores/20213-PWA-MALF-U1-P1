@@ -1,5 +1,5 @@
 let url = window.location.href;
-let swDirect = '/PWA-U1-P1/serviceWorker.js'
+let swDirect = '/20213-PWA-MALF-U1-P1/serviceWorker.js'
 
 if(navigator.serviceWorker){
 
