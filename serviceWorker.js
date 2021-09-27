@@ -7,11 +7,10 @@ self.addEventListener("activate",(event)=>{
     console.log("SW activado")
 })
 
-self.addEventListener("fetch",(event)=>{
+self.addEventListener("fetch", async (event,...args)=>{
     
     if(event.request.url.includes('.jpg')){
         let newResponse = fetch('./images/gato.jpg');
-        console.log("Es una imagen")
 
         event.respondWith(newResponse)
     }
@@ -36,3 +35,4 @@ self.addEventListener("fetch",(event)=>{
     
 
 })
+
